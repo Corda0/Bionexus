@@ -1,1 +1,190 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — BioNexus</title>
+  <meta name="description" content="BioNexus is the University of Aveiro's two-day bioinformatics conference featuring talks, workshops, and networking for students and professionals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="BioNexus logo" onerror="this.style.display='none'">
+        BioNexus
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="program.html" class="nav-link">Program</a></li>
+        <li><a href="speakers.html" class="nav-link">Speakers</a></li>
+        <li><a href="gallery.html" class="nav-link">Photos</a></li>
+        <li><a href="past-editions.html" class="nav-link">Past Editions</a></li>
+        <li><a href="committee.html" class="nav-link">Committee</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="registration.html" class="btn btn-outline">Register</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">University of Aveiro · Nov 2026</div>
+      <h1>Where <span>Bioinformatics</span> Meets the Next Generation</h1>
+      <p>Two days of talks, hands-on workshops, and networking for students and professionals passionate about computational biology, genomics, and clinical data science.</p>
+      <div class="hero-actions">
+        <a href="registration.html" class="btn btn-light">Register Now</a>
+        <a href="program.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4); color:#fff;">View Program</a>
+      </div>
+
+      <div id="countdown" class="countdown">
+        <div class="countdown-item"><span class="num" id="cd-days">00</span><span class="label">Days</span></div>
+        <div class="countdown-item"><span class="num" id="cd-hours">00</span><span class="label">Hours</span></div>
+        <div class="countdown-item"><span class="num" id="cd-minutes">00</span><span class="label">Minutes</span></div>
+        <div class="countdown-item"><span class="num" id="cd-seconds">00</span><span class="label">Seconds</span></div>
+      </div>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+          <div><strong>Nov 20&ndash;21, 2026</strong>Two full days</div>
+        </div>
+        <div class="hero-meta-item">
+          <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><strong>University of Aveiro</strong>In-person event</div>
+        </div>
+        <div class="hero-meta-item">
+          <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <div><strong>20+ Speakers</strong>Talks &amp; workshops</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Why attend</span>
+        <h2>Built for Bioinformatics Minds</h2>
+        <p>Whether you're a student taking your first steps or a researcher pushing the field forward, BioNexus has something for you.</p>
+      </div>
+      <div class="highlights">
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-5 9 5-9 5-9-5z"/><path d="M7 14.5v3.5c0 1 2.2 2 5 2s5-1 5-2v-3.5"/></svg>
+          </div>
+          <h3>Expert Talks</h3>
+          <p>Keynotes and sessions from leading researchers in genomics, ML, and clinical data science.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.04 1.56V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.35a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.64 15a1.7 1.7 0 0 0-1.56-1.04H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.65 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.64a1.7 1.7 0 0 0 1.04-1.56V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15 4.65a1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.35 9a1.7 1.7 0 0 0 1.56 1.04H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1.04z"/></svg>
+          </div>
+          <h3>Hands-on Workshops</h3>
+          <p>Practical sessions covering pipelines, statistical methods, and real-world datasets.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Networking</h3>
+          <p>Meet peers, professors, and professionals shaping the future of bioinformatics.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Career Growth</h3>
+          <p>Discover research opportunities, internships, and academic paths in the field.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="about-split">
+        <img src="images/about.jpg" alt="BioNexus conference audience" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80'">
+        <div>
+          <h2>About BioNexus</h2>
+          <p>BioNexus is the University of Aveiro's annual conference dedicated to bioinformatics and computational biology. Over two days, students and professionals come together to explore the latest advances in genomic data analysis, machine learning for clinical research, and database design for life sciences.</p>
+          <p>Our mission is to bridge the gap between academic research and real-world application, creating a space where undergraduate and graduate students can learn directly from experienced researchers and industry professionals.</p>
+          <div class="stat-row">
+            <div class="stat"><strong>2</strong><span>Days</span></div>
+            <div class="stat"><strong>20+</strong><span>Speakers</span></div>
+            <div class="stat"><strong>300+</strong><span>Attendees</span></div>
+            <div class="stat"><strong>10+</strong><span>Workshops</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="cta-banner">
+      <h2>Ready to Join Us?</h2>
+      <p>Spots are limited — secure your place at BioNexus 2026 today.</p>
+      <a href="registration.html" class="btn btn-light">Register Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="BioNexus logo" onerror="this.style.display='none'">
+            BioNexus
+          </div>
+          <p style="font-size:0.88rem; color:rgba(255,255,255,0.6); max-width:280px;">
+            BioNexus is the University of Aveiro's conference bringing together students and professionals in bioinformatics for two days of talks, workshops, and networking.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="X / Twitter">X</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="gallery.html">Photos</a></li>
+            <li><a href="past-editions.html">Past Editions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Event</h4>
+          <ul>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="#">Venue &amp; Travel</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:bionexus@ua.pt">bionexus@ua.pt</a></li>
+            <li><a href="#">University of Aveiro</a></li>
+            <li><a href="#">Aveiro, Portugal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BioNexus — University of Aveiro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
