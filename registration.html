@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration — BioNexus</title>
+  <meta name="description" content="Register for BioNexus 2026 — secure your spot at the University of Aveiro's bioinformatics conference.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="BioNexus logo" onerror="this.style.display='none'">
+        BioNexus
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="gallery.html">Photos</a></li>
+        <li><a href="past-editions.html">Past Editions</a></li>
+        <li><a href="committee.html">Committee</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="registration.html" class="btn btn-outline">Register</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Registration</div>
+      <h1>Register for BioNexus 2026</h1>
+      <p>Secure your spot at the University of Aveiro's bioinformatics conference — Nov 20–21, 2026.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="form-wrapper">
+
+        <div class="pricing-note">
+          <strong>Pricing:</strong> Free for University of Aveiro students with valid student ID · €15 for external students · €35 for professionals. Includes both days, workshop materials, and lunch.
+        </div>
+
+        <form id="registration-form">
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last-name" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="affiliation">University / Company *</label>
+            <input type="text" id="affiliation" name="affiliation" placeholder="e.g. University of Aveiro" required>
+          </div>
+
+          <div class="form-group">
+            <label>Attendee Type *</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="attendee-type" value="ua-student" required>
+                UA Student (Free)
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="attendee-type" value="external-student">
+                External Student (€15)
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="attendee-type" value="professional">
+                Professional (€35)
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="workshop">Preferred Workshop</label>
+            <select id="workshop" name="workshop">
+              <option value="">No preference</option>
+              <option value="rnaseq">Day 1 — RNA-seq Alignment with STAR</option>
+              <option value="shiny">Day 1 — Building a Shiny App</option>
+              <option value="crossval">Day 2 — Cross-Validation Done Right</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Dietary Restrictions / Notes</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Let us know if you have any dietary restrictions or accessibility needs."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Complete Registration</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="BioNexus logo" onerror="this.style.display='none'">
+            BioNexus
+          </div>
+          <p style="font-size:0.88rem; color:rgba(255,255,255,0.6); max-width:280px;">
+            BioNexus is the University of Aveiro's conference bringing together students and professionals in bioinformatics for two days of talks, workshops, and networking.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="X / Twitter">X</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="gallery.html">Photos</a></li>
+            <li><a href="past-editions.html">Past Editions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Event</h4>
+          <ul>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="#">Venue &amp; Travel</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:bionexus@ua.pt">bionexus@ua.pt</a></li>
+            <li><a href="#">University of Aveiro</a></li>
+            <li><a href="#">Aveiro, Portugal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BioNexus — University of Aveiro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/registration.js"></script>
+</body>
+</html>

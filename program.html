@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program — BioNexus</title>
+  <meta name="description" content="Full two-day schedule for BioNexus 2026 — keynotes, talks, and hands-on workshops.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="BioNexus logo" onerror="this.style.display='none'">
+        BioNexus
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="program.html" class=" active">Program</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="gallery.html">Photos</a></li>
+        <li><a href="past-editions.html">Past Editions</a></li>
+        <li><a href="committee.html">Committee</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="registration.html" class="btn btn-outline">Register</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Program</div>
+      <h1>Conference Program</h1>
+      <p>Two days packed with keynotes, technical talks, and hands-on workshops. Full schedule below.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="day-tabs">
+        <button class="day-tab active" data-day="day1">Day 1 — Nov 20</button>
+        <button class="day-tab" data-day="day2">Day 2 — Nov 21</button>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="keynote">Keynotes</button>
+        <button class="filter-tab" data-filter="talk">Talks</button>
+        <button class="filter-tab" data-filter="workshop">Workshops</button>
+        <button class="filter-tab" data-filter="break">Breaks</button>
+      </div>
+
+      <!-- DAY 1 -->
+      <div class="schedule-day active" data-day="day1">
+        <div class="schedule-item" data-type="break">
+          <div class="schedule-time">08:30 – 09:00</div>
+          <div class="schedule-details">
+            <h3>Registration &amp; Welcome Coffee</h3>
+            <p>Check-in, badge pickup, and networking.</p>
+            <span class="schedule-tag tag-break">Break</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="keynote">
+          <div class="schedule-time">09:00 – 10:00</div>
+          <div class="schedule-details">
+            <h3>Opening Keynote: The Future of Genomic Medicine</h3>
+            <p>An overview of how computational biology is reshaping clinical diagnostics.</p>
+            <span class="schedule-tag tag-keynote">Keynote</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="talk">
+          <div class="schedule-time">10:15 – 11:00</div>
+          <div class="schedule-details">
+            <h3>Variant Calling at Scale: Lessons from Population Genomics</h3>
+            <p>Best practices and pitfalls when running bcftools pipelines on large cohorts.</p>
+            <span class="schedule-tag tag-talk">Talk</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="break">
+          <div class="schedule-time">11:00 – 11:20</div>
+          <div class="schedule-details">
+            <h3>Coffee Break</h3>
+            <span class="schedule-tag tag-break">Break</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="workshop">
+          <div class="schedule-time">11:20 – 13:00</div>
+          <div class="schedule-details">
+            <h3>Workshop: RNA-seq Alignment with STAR</h3>
+            <p>Hands-on session covering read alignment, QC, and downstream expression analysis.</p>
+            <span class="schedule-tag tag-workshop">Workshop</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="break">
+          <div class="schedule-time">13:00 – 14:30</div>
+          <div class="schedule-details">
+            <h3>Lunch</h3>
+            <span class="schedule-tag tag-break">Break</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="talk">
+          <div class="schedule-time">14:30 – 15:15</div>
+          <div class="schedule-details">
+            <h3>Machine Learning for Clinical Risk Prediction</h3>
+            <p>Case studies applying ML models to real clinical datasets, with a focus on validation.</p>
+            <span class="schedule-tag tag-talk">Talk</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="workshop">
+          <div class="schedule-time">15:30 – 17:00</div>
+          <div class="schedule-details">
+            <h3>Workshop: Building a Shiny App for Clinical Data Exploration</h3>
+            <p>From raw data to an interactive dashboard — a step-by-step build.</p>
+            <span class="schedule-tag tag-workshop">Workshop</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="break">
+          <div class="schedule-time">17:15 – 19:00</div>
+          <div class="schedule-details">
+            <h3>Welcome Reception &amp; Networking</h3>
+            <span class="schedule-tag tag-break">Social</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAY 2 -->
+      <div class="schedule-day" data-day="day2">
+        <div class="schedule-item" data-type="keynote">
+          <div class="schedule-time">09:00 – 10:00</div>
+          <div class="schedule-details">
+            <h3>Keynote: Databases at the Core of Modern Bioinformatics</h3>
+            <p>Designing scalable database systems for large-scale genomic and clinical data.</p>
+            <span class="schedule-tag tag-keynote">Keynote</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="talk">
+          <div class="schedule-time">10:15 – 11:00</div>
+          <div class="schedule-details">
+            <h3>Feature Selection Strategies for High-Dimensional Genomic Data</h3>
+            <p>Comparing dimensionality reduction techniques across real-world case studies.</p>
+            <span class="schedule-tag tag-talk">Talk</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="break">
+          <div class="schedule-time">11:00 – 11:20</div>
+          <div class="schedule-details">
+            <h3>Coffee Break</h3>
+            <span class="schedule-tag tag-break">Break</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="workshop">
+          <div class="schedule-time">11:20 – 13:00</div>
+          <div class="schedule-details">
+            <h3>Workshop: Cross-Validation Done Right</h3>
+            <p>Avoiding data leakage and building robust model evaluation pipelines.</p>
+            <span class="schedule-tag tag-workshop">Workshop</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="break">
+          <div class="schedule-time">13:00 – 14:30</div>
+          <div class="schedule-details">
+            <h3>Lunch</h3>
+            <span class="schedule-tag tag-break">Break</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="talk">
+          <div class="schedule-time">14:30 – 15:15</div>
+          <div class="schedule-details">
+            <h3>Panel: Careers in Bioinformatics — Academia vs. Industry</h3>
+            <p>Speakers share their career paths and answer audience questions.</p>
+            <span class="schedule-tag tag-talk">Talk</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="keynote">
+          <div class="schedule-time">15:30 – 16:15</div>
+          <div class="schedule-details">
+            <h3>Closing Keynote: What's Next for Computational Biology</h3>
+            <p>A forward-looking talk on emerging trends and open research challenges.</p>
+            <span class="schedule-tag tag-keynote">Keynote</span>
+          </div>
+        </div>
+        <div class="schedule-item" data-type="break">
+          <div class="schedule-time">16:15 – 16:30</div>
+          <div class="schedule-details">
+            <h3>Closing Remarks &amp; Group Photo</h3>
+            <span class="schedule-tag tag-break">Break</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="BioNexus logo" onerror="this.style.display='none'">
+            BioNexus
+          </div>
+          <p style="font-size:0.88rem; color:rgba(255,255,255,0.6); max-width:280px;">
+            BioNexus is the University of Aveiro's conference bringing together students and professionals in bioinformatics for two days of talks, workshops, and networking.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="X / Twitter">X</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="gallery.html">Photos</a></li>
+            <li><a href="past-editions.html">Past Editions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Event</h4>
+          <ul>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="#">Venue &amp; Travel</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:bionexus@ua.pt">bionexus@ua.pt</a></li>
+            <li><a href="#">University of Aveiro</a></li>
+            <li><a href="#">Aveiro, Portugal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BioNexus — University of Aveiro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/program.js"></script>
+</body>
+</html>
