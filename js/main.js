@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const countdownEl = document.getElementById('countdown');
   if (countdownEl) {
     // EDIT HERE: set the exact event start date/time
-    const eventDate = new Date('2026-11-20T09:00:00');
+    const eventDate = new Date('2027-04-14T09:00:00');
 
     function updateCountdown() {
       const now = new Date();
