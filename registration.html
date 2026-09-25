@@ -18,12 +18,12 @@
         BioNexus
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="program.html">Program</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="gallery.html">Photos</a></li>
-        <li><a href="past-editions.html">Past Editions</a></li>
-        <li><a href="committee.html">Committee</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="program.html" class="nav-link">Program</a></li>
+        <li><a href="speakers.html" class="nav-link">Speakers</a></li>
+        <li><a href="gallery.html" class="nav-link">Photos</a></li>
+        <li><a href="past-editions.html" class="nav-link">Past Editions</a></li>
+        <li><a href="committee.html" class="nav-link">Committee</a></li>
       </ul>
       <div class="nav-cta">
         <a href="registration.html" class="btn btn-outline">Register</a>
@@ -44,69 +44,25 @@
 
   <section class="section">
     <div class="container">
-      <div class="form-wrapper">
+      <div class="form-wrapper" style="text-align:center;">
 
-        <div class="pricing-note">
+        <div class="pricing-note" style="text-align:left;">
           <strong>Pricing:</strong> Free for University of Aveiro students with valid student ID · €15 for external students · €35 for professionals. Includes both days, workshop materials, and lunch.
         </div>
 
-        <form id="registration-form">
-          <div class="form-group-row">
-            <div class="form-group">
-              <label for="first-name">First Name *</label>
-              <input type="text" id="first-name" name="first-name" required>
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name *</label>
-              <input type="text" id="last-name" name="last-name" required>
-            </div>
-          </div>
+        <h2 style="margin-bottom:16px;">Complete Your Registration</h2>
+        <p style="color:var(--color-text-muted); margin-bottom:32px;">
+          Registrations for BioNexus 2026 are handled through our official form. Click below to open it and fill in your details — it only takes a couple of minutes.
+        </p>
 
-          <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required>
-          </div>
+        <!-- EDIT HERE: replace "#" with your actual Google Form link once it's ready -->
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary" id="registration-form-link" style="padding:16px 40px; font-size:1.05rem;">
+          Open Registration Form
+        </a>
 
-          <div class="form-group">
-            <label for="affiliation">University / Company *</label>
-            <input type="text" id="affiliation" name="affiliation" placeholder="e.g. University of Aveiro" required>
-          </div>
-
-          <div class="form-group">
-            <label>Attendee Type *</label>
-            <div class="radio-group">
-              <label class="radio-option">
-                <input type="radio" name="attendee-type" value="ua-student" required>
-                UA Student (Free)
-              </label>
-              <label class="radio-option">
-                <input type="radio" name="attendee-type" value="external-student">
-                External Student (€15)
-              </label>
-              <label class="radio-option">
-                <input type="radio" name="attendee-type" value="professional">
-                Professional (€35)
-              </label>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="workshop">Preferred Workshop</label>
-            <select id="workshop" name="workshop">
-              <option value="">No preference</option>
-              <option value="rnaseq">Day 1 — RNA-seq Alignment with STAR</option>
-              <option value="shiny">Day 1 — Building a Shiny App</option>
-              <option value="crossval">Day 2 — Cross-Validation Done Right</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="notes">Dietary Restrictions / Notes</label>
-            <textarea id="notes" name="notes" rows="3" placeholder="Let us know if you have any dietary restrictions or accessibility needs."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary form-submit">Complete Registration</button>
-        </form>
+        <p style="color:var(--color-text-muted); font-size:0.85rem; margin-top:24px;">
+          The form will open in a new tab. If you require an invoice, instructions are provided within the form itself.
+        </p>
       </div>
     </div>
   </section>
@@ -162,6 +118,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/registration.js"></script>
 </body>
 </html>
