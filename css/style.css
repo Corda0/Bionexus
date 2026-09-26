@@ -39,7 +39,7 @@ img { max-width: 100%; display: block; }
 .btn-primary { background: var(--color-primary); color: var(--color-white); }
 .btn-primary:hover { background: var(--color-primary-dark); transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .btn-outline { background: transparent; border-color: var(--color-primary); color: var(--color-primary); }
-.btn-outline:hover { background: var(--color-primary); color: var(--color-white); transform: translateY(-2px); }
+.btn-outline:hover { background: var(--color-primary); color: var(--color-white); }
 .btn-light { background: var(--color-white); color: var(--color-primary); }
 .btn-light:hover { background: var(--color-accent); transform: translateY(-2px); }
 .navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--color-border); transition: all var(--transition); }
@@ -111,6 +111,10 @@ img { max-width: 100%; display: block; }
 .filter-tab { padding: 10px 22px; border-radius: 999px; border: 1px solid var(--color-border); background: var(--color-white); font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: all var(--transition); }
 .filter-tab:hover { border-color: var(--color-primary); color: var(--color-primary); }
 .filter-tab.active { background: var(--color-primary); color: var(--color-white); border-color: var(--color-primary); }
+.gallery-filter-bar { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 40px; flex-wrap: wrap; }
+.gallery-filter-label { font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted); }
+.edition-select { padding: 12px 20px; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-white); font-family: var(--font-body); font-size: 0.92rem; font-weight: 500; color: var(--color-text); cursor: pointer; min-width: 220px; transition: border var(--transition); }
+.edition-select:hover, .edition-select:focus { border-color: var(--color-primary); outline: none; }
 .day-tabs { display: flex; justify-content: center; gap: 16px; margin-bottom: 48px; }
 .day-tab { padding: 14px 32px; border-radius: var(--radius-md); border: 2px solid var(--color-border); background: var(--color-white); font-weight: 600; cursor: pointer; transition: all var(--transition); }
 .day-tab.active { border-color: var(--color-primary); background: var(--color-primary); color: var(--color-white); }
@@ -207,4 +211,5 @@ img { max-width: 100%; display: block; }
   .hero-meta { gap: 24px; }
   .countdown-item { min-width: 70px; padding: 14px 16px; }
   .countdown-item .num { font-size: 1.5rem; }
+  .edition-select { min-width: 180px; width: 100%; }
 }
