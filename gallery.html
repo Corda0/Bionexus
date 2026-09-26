@@ -45,8 +45,10 @@
     <div class="container">
       <div class="filter-tabs">
         <button class="filter-tab active" data-filter="all">All</button>
-        <button class="filter-tab" data-filter="2027">BioNexus 2027 (2nd Edition)</button>
-        <button class="filter-tab" data-filter="2026">BioNexus 2026 (1st Edition)</button>
+        <button class="filter-tab" data-filter="2027">BioNexus 2027 (4th Edition)</button>
+        <button class="filter-tab" data-filter="2026">BioNexus 2026 (3rd Edition)</button>
+        <button class="filter-tab" data-filter="2025">BioNexus 2025 (2nd Edition)</button>
+        <button class="filter-tab" data-filter="2024">BioNexus 2024 (1st Edition)</button>
       </div>
 
       <div class="gallery-grid">
@@ -66,6 +68,19 @@
         <div class="gallery-item" data-edition="2026"><img src="images/gallery/2026-6.jpg" alt="BioNexus 2026 photo 6" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
         <div class="gallery-item" data-edition="2026"><img src="images/gallery/2026-7.jpg" alt="BioNexus 2026 photo 7" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
         <div class="gallery-item" data-edition="2026"><img src="images/gallery/2026-8.jpg" alt="BioNexus 2026 photo 8" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
+        <div class="gallery-item" data-edition="2025"><img src="images/gallery/2025-1.jpg" alt="BioNexus 2025 photo 1" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
+        <div class="gallery-item" data-edition="2025"><img src="images/gallery/2025-2.jpg" alt="BioNexus 2025 photo 2" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
+        <div class="gallery-item" data-edition="2025"><img src="images/gallery/2025-3.jpg" alt="BioNexus 2025 photo 3" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
+        <div class="gallery-item" data-edition="2025"><img src="images/gallery/2025-4.jpg" alt="BioNexus 2025 photo 4" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
+        <div class="gallery-item" data-edition="2025"><img src="images/gallery/2025-5.jpg" alt="BioNexus 2025 photo 5" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
+        <div class="gallery-item" data-edition="2025"><img src="images/gallery/2025-6.jpg" alt="BioNexus 2025 photo 6" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
+        <div class="gallery-item" data-edition="2025"><img src="images/gallery/2025-7.jpg" alt="BioNexus 2025 photo 7" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
+        <div class="gallery-item" data-edition="2025"><img src="images/gallery/2025-8.jpg" alt="BioNexus 2025 photo 8" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80'"></div>
+      </div>
+
+      <!-- EDIT HERE: no photos available yet for the 1st Edition (2024). Add images to images/gallery/2024-*.jpg and duplicate a .gallery-item block above (data-edition="2024") once you have them. -->
+      <div id="gallery-2024-note" style="display:none; text-align:center; padding: 40px 0; color: var(--color-text-muted);">
+        <p>Photos from the 1st Edition (2024) are coming soon.</p>
       </div>
     </div>
   </section>
@@ -125,5 +140,16 @@
 
   <script src="js/main.js"></script>
   <script src="js/gallery.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tabs = document.querySelectorAll('.filter-tab');
+      var note = document.getElementById('gallery-2024-note');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          note.style.display = tab.getAttribute('data-filter') === '2024' ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
