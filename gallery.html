@@ -43,15 +43,12 @@
 
   <section class="section">
     <div class="container">
-      <div class="gallery-filter-bar">
-        <label for="edition-select" class="gallery-filter-label">Filter by edition</label>
-        <select id="edition-select" class="edition-select">
-          <option value="all">All editions</option>
-          <option value="2027">4th Edition — 2027</option>
-          <option value="2026">3rd Edition — 2026</option>
-          <option value="2025">2nd Edition — 2025</option>
-          <option value="2024">1st Edition — 2024</option>
-        </select>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="2027">4th Edition</button>
+        <button class="filter-tab" data-filter="2026">3rd Edition</button>
+        <button class="filter-tab" data-filter="2025">2nd Edition</button>
+        <button class="filter-tab" data-filter="2024">1st Edition</button>
       </div>
 
       <div class="gallery-grid">
@@ -144,19 +141,23 @@
   <script src="js/main.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var select = document.getElementById('edition-select');
+      var tabs = document.querySelectorAll('.filter-tab');
       var items = document.querySelectorAll('.gallery-item');
       var note = document.getElementById('gallery-2024-note');
       var lightbox = document.getElementById('lightbox');
       var lightboxImg = document.getElementById('lightbox-img');
       var closeBtn = document.querySelector('.lightbox-close');
 
-      select.addEventListener('change', function () {
-        var value = select.value;
-        items.forEach(function (item) {
-          item.style.display = (value === 'all' || item.getAttribute('data-edition') === value) ? 'block' : 'none';
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          var value = tab.getAttribute('data-filter');
+          tabs.forEach(function (t) { t.classList.remove('active'); });
+          tab.classList.add('active');
+          items.forEach(function (item) {
+            item.style.display = (value === 'all' || item.getAttribute('data-edition') === value) ? 'block' : 'none';
+          });
+          note.style.display = value === '2024' ? 'block' : 'none';
         });
-        note.style.display = value === '2024' ? 'block' : 'none';
       });
 
       document.querySelectorAll('.gallery-item img').forEach(function (img) {
