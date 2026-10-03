@@ -58,7 +58,11 @@ img { max-width: 100%; display: block; }
 .hero::before { content: ''; position: absolute; top: -20%; right: -10%; width: 60%; height: 140%; background: radial-gradient(circle, rgba(186, 95, 53, 0.25) 0%, transparent 70%); pointer-events: none; }
 .hero::after { content: ''; position: absolute; bottom: -30%; left: -15%; width: 50%; height: 100%; background: radial-gradient(circle, rgba(212, 133, 95, 0.18) 0%, transparent 70%); pointer-events: none; }
 .hero-content { position: relative; z-index: 2; max-width: 720px; margin: 0 auto; text-align: center; padding: 60px 24px; }
-.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); padding: 8px 18px; border-radius: 999px; font-size: 0.85rem; font-weight: 500; margin-bottom: 28px; }
+.hero-badge { position: relative; display: inline-flex; align-items: center; justify-content: center; text-align: center; width: max-content; min-width: 184px; padding: 11px 22px 10px; overflow: hidden; isolation: isolate; color: var(--color-white); background: rgba(25, 84, 87, 0.5); border: 1px solid rgba(247, 232, 213, 0.38); border-radius: 999px; font-family: var(--font-heading); font-size: 0.86rem; font-weight: 700; letter-spacing: 0.12em; line-height: 1; text-align: center; text-transform: uppercase; margin: 0 auto 28px; text-shadow: 0 1px 10px rgba(255, 255, 255, 0.18); box-shadow: 0 0 0 1px rgba(186, 95, 53, 0.1), 0 8px 24px rgba(15, 53, 55, 0.2); animation: badge-breathe 4s ease-in-out infinite; }
+.hero-badge::after { content: ''; position: absolute; top: 0; left: -45%; width: 35%; height: 100%; z-index: -1; background: linear-gradient(100deg, transparent, rgba(247, 232, 213, 0.35), transparent); transform: skewX(-18deg); animation: badge-scan 5s ease-in-out infinite; }
+@keyframes badge-breathe { 0%, 100% { box-shadow: 0 0 0 1px rgba(186, 95, 53, 0.1), 0 8px 24px rgba(15, 53, 55, 0.2); } 50% { box-shadow: 0 0 0 1px rgba(186, 95, 53, 0.3), 0 8px 30px rgba(186, 95, 55, 0.3); } }
+@keyframes badge-scan { 0%, 25% { left: -45%; } 70%, 100% { left: 125%; } }
+@media (prefers-reduced-motion: reduce) { .hero-badge, .hero-badge::after { animation: none; } }
 .hero h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); color: var(--color-white); margin-bottom: 20px; letter-spacing: -0.02em; }
 .hero h1 span { color: var(--color-accent); }
 .hero p { font-size: 1.15rem; color: rgba(255, 255, 255, 0.85); margin-bottom: 36px; }
