@@ -41,28 +41,76 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section registration-section">
     <div class="container">
-      <div class="form-wrapper" style="text-align:center;">
 
-        <div class="pricing-note" style="text-align:left;">
-          <strong>Pricing:</strong> Free for University of Aveiro students with valid student ID · €15 for external students · €35 for professionals. Includes both days, workshop materials, and lunch.
+      <div class="section-header">
+        <span class="eyebrow">BioNexus 2027</span>
+        <h2>Registration options</h2>
+        <p>Choose the option that applies to you, then complete the registration form below.</p>
+      </div>
+
+      <div class="registration-options" aria-label="Registration options">
+        <button
+          class="registration-option active"
+          type="button"
+          data-registration="student"
+          data-form-url="COLOCA_AQUI_O_LINK_DE_EMBED_DO_FORM_DE_ESTUDANTES">
+          <span class="registration-option-title">Student</span>
+          <span class="registration-option-description">
+            For undergraduate, master’s and PhD students.
+          </span>
+        </button>
+
+        <button
+          class="registration-option"
+          type="button"
+          data-registration="researcher"
+          data-form-url="COLOCA_AQUI_O_LINK_DE_EMBED_DO_FORM_DE_INVESTIGADORES">
+          <span class="registration-option-title">Researcher / Academic</span>
+          <span class="registration-option-description">
+            For researchers, academic staff and postdoctoral fellows.
+          </span>
+        </button>
+
+        <button
+          class="registration-option"
+          type="button"
+          data-registration="professional"
+          data-form-url="COLOCA_AQUI_O_LINK_DE_EMBED_DO_FORM_DE_PROFISSIONAIS">
+          <span class="registration-option-title">Professional</span>
+          <span class="registration-option-description">
+            For industry professionals and other participants.
+          </span>
+        </button>
+      </div>
+
+      <div class="registration-form-panel" id="registration-form-panel">
+        <div class="registration-form-heading">
+          <p class="eyebrow" id="registration-form-label">Student registration</p>
+          <h3 id="registration-form-title">Complete your registration</h3>
         </div>
 
-        <h2 style="margin-bottom:16px;">Complete Your Registration</h2>
-        <p style="color:var(--color-text-muted); margin-bottom:32px;">
-          Registrations for BioNexus 2027 are handled through our official form. Click below to open it and fill in your details — it only takes a couple of minutes.
-        </p>
+        <iframe
+          id="registration-form-frame"
+          title="BioNexus registration form"
+          src=""
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
 
-        <!-- EDIT HERE: replace "#" with your actual Google Form link once it's ready -->
-        <a href="#" target="_blank" rel="noopener" class="btn btn-primary" id="registration-form-link" style="padding:16px 40px; font-size:1.05rem;">
-          Open Registration Form
-        </a>
-
-        <p style="color:var(--color-text-muted); font-size:0.85rem; margin-top:24px;">
-          The form will open in a new tab. If you require an invoice, instructions are provided within the form itself.
+        <p class="registration-form-help">
+          If the form does not load, use
+          <a
+            id="registration-form-external-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer">
+            this link to open it in a new tab
+          </a>.
         </p>
       </div>
+
     </div>
   </section>
 
@@ -102,7 +150,7 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><a href="mailto:bionexus@ua.pt">bionexus@ua.pt</a></li>
+            <li><a href="mailto:cobic.ua@gmail.com">cobic.ua@gmail.com</a></li>
             <li><a href="index.html#venue">University of Aveiro</a></li>
             <li><a href="index.html#venue">Aveiro, Portugal</a></li>
           </ul>
@@ -132,5 +180,48 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var options = document.querySelectorAll('.registration-option');
+    var formFrame = document.getElementById('registration-form-frame');
+    var externalLink = document.getElementById('registration-form-external-link');
+    var formLabel = document.getElementById('registration-form-label');
+    var formTitle = document.getElementById('registration-form-title');
+
+    function openRegistrationForm(option) {
+      var formUrl = option.getAttribute('data-form-url');
+      var optionName = option.querySelector('.registration-option-title').textContent;
+
+      options.forEach(function (item) {
+        item.classList.remove('active');
+      });
+
+      option.classList.add('active');
+
+      formLabel.textContent = optionName + ' registration';
+      formTitle.textContent = 'Complete your registration';
+
+      formFrame.src = formUrl;
+      externalLink.href = formUrl.replace('?embedded=true', '');
+    }
+
+    options.forEach(function (option) {
+      option.addEventListener('click', function () {
+        openRegistrationForm(option);
+
+        document.getElementById('registration-form-panel').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+
+    var firstOption = document.querySelector('.registration-option.active');
+
+    if (firstOption) {
+      openRegistrationForm(firstOption);
+    }
+  });
+</script>
 </body>
 </html>

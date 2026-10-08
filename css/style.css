@@ -116,7 +116,7 @@ img { max-width: 100%; display: block; }
 .speaker-socials a .mail-icon {  transform: translate(-0.6px, 0.4px); }
 .filter-tabs { display: flex; justify-content: center; gap: 12px; margin-bottom: 48px; flex-wrap: wrap; }
 .filter-tab { padding: 10px 22px; border-radius: 999px; border: 1px solid var(--color-border); background: var(--color-white); font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: all var(--transition); }
-.filter-tab:hover { border-color：var(--color-accent); color: var(--color-accent); }
+.filter-tab:hover { border-color: var(--color-accent);color: var(--color-accent);}
 .filter-tab.active { background: var(--color-primary); color: var(--color-white); border-color: var(--color-primary); }
 .gallery-filter-bar { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 40px; flex-wrap: wrap; }
 .gallery-filter-label { font-size: 0.9rem; font-weight: 500; color: var(--color-text-muted); }
